@@ -1,16 +1,17 @@
-import { useDispatch, useSelector } from "react-redux";
 import React, { useState, useEffect } from "react";
-import { DIALS, CASE, STRAP } from "../../utils/shared/MockData";
-import WatchPanels, { ComponentTypeName } from "./WatchPanels";
-import PrimaryButton from "../../utils/shared/PrimaryButton";
-import { ColorButton, SubTypeButton } from "./Watchview.partials";
-import { MdArrowForwardIos } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
 import {
   getWatchDetailsData,
   getSubComponentTypeData,
   setUserSelectData,
   setSelectedCaseType,
 } from "../../store/feature/watchFeature";
+import { DIALS, CASE, STRAP } from "../../utils/shared/MockData";
+import WatchPanels, { ComponentTypeName } from "./WatchPanels";
+import PrimaryButton from "../../utils/shared/PrimaryButton";
+import { ColorButton, SubTypeButton } from "./Watchview.partials";
+import { MdArrowForwardIos } from "react-icons/md";
+
 
 
 const WatchView = () => {
